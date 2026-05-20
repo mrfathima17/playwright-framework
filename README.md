@@ -13,6 +13,7 @@ targeting the Saucedemo e-commerce application.
 - Reporting: pytest-html
 
 ## Framework Structure
+```
 playwright-framework/
 ├── pages/          → Page Object classes
 ├── tests/          → Test cases
@@ -21,6 +22,7 @@ playwright-framework/
 ├── reports/        → Generated test reports
 ├── conftest.py     → Browser setup and fixtures
 └── pytest.ini      → pytest configuration
+```
 
 ## Test Coverage
 - Login tests (valid, invalid, locked user)
@@ -29,6 +31,8 @@ playwright-framework/
 - Checkout flow tests
 
 ## How to Run
+```
 pip install playwright pytest pytest-playwright pytest-html
 playwright install
 pytest --headed --html=reports/report.html
+```
